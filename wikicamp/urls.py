@@ -13,5 +13,10 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    #url(r'^admin/', include(admin.site.urls)),
+    # For wiki
+    url(r'^wikicamp/(?P<page_name>[^/]+)/edit/$', 'wiki.views.edit_page'),
+    url(r'^wikicamp/(?P<page_name>[^/]+)/save/$', 'wiki.views.save_page'),
+    url(r'^wikicamp/(?P<page_name>[^/]+)/$',      'wiki.views.view_page'),
+
 )
