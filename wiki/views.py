@@ -2,6 +2,7 @@
 from wiki.models      import Page
 from django.shortcuts import render_to_response
 from django.http      import HttpResponseRedirect
+import markdown
 
 def view_page(request, page_name): #from URL
   '''Views a page XXX retrieving it from DB'''
@@ -10,7 +11,7 @@ def view_page(request, page_name): #from URL
   except Page.DoesNotExist:
     return render_to_response("create.html", {"page_name": page_name} )
   content=page.content
-  return render_to_response("view.html", {"page_name": page_name, "content": content} )
+  return render_to_response("view.html", {"page_name": page_name, "content": markdown.markdown(content)} )
 
 def edit_page(request, page_name):
   """Creates/Edits page calles 'page_name'. this var comes from urls.py"""

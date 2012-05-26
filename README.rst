@@ -7,6 +7,12 @@ Copied / extrapolated from here::
 
   http://showmedo.com/videotutorials/video?name=1100000&fromSeriesID=110
 
+Install
+-------
+
+Requires module::
+
+  markdown
 
 Develop
 -------
