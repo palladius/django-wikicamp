@@ -1,21 +1,31 @@
 Wikicamp
 --------
 
-How to do a Wiki on Django. This is a pic of how it comes out :)
+This is my first application made with Django. It's a *Wiki*. This is a pic of how the (minimalistic) website looks like:
 
 .. image:: https://github.com/palladius/django-wikicamp/raw/master/doc/django-rickywiki.png
-   :height: 100px
+   :width:  219 px
+   :height: 101 px
    :scale: 50 %
    :alt: This is a snapshot of Riccardo great wiki
    :align: right
+
+I was utterly inspired (read: copied) by an Indian guy who made a screencast on how to create a wiki in Django in just 20'. So I did it. Pity it's so outdated I had to make some changes. See Credits for more info.
 
 Install
 -------
 
 Requires module::
 
-  markdown
-  docutils
+  markdown (for wiki markdown)
+  docutils (for admin docs)
+
+Todo
+----
+
+* Use CSS (!!)
+* Refactor templates with generic stub (I dont know *yield* equivalent in python!)
+* Put links into the markdown (have [[riccardo]] be correctly linked to the relevant page).
 
 Develop
 -------
