@@ -21,4 +21,7 @@ urlpatterns = patterns('',
     #url(r'^$',      'wiki.views.view_page', page_name = 'Home' ),
     url(r'^$',      'wiki.views.view_home' ),
 
+   # url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    #url(r'^images/(?P<path>.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),
+
 )

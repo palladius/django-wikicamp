@@ -1,7 +1,25 @@
-<center>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static user_stylesheet %}" type="text/css" media="screen" />
+
+<center class='header_entries'>
 [
-<a href='/admin/'>Admin</a> |
-<a href='/admin/doc'>AdminDocs</a> |
+<img src='/static/images/home.png' height='20' />
 <a href='/wikicamp/Home/'>Home</a>
+
+|
+
+<img src='/static/images/admin.png' height='20' />
+<a href='/admin/'>Admin</a> 
+
+|
+
+<img src='/static/images/admin_docs.png' height='20' />
+<a href='/admin/doc'>AdminDocs</a> 
+
+|
+
+<img src='/static/images/riccardo.jpg' height='20' />
+<a href='/wikicamp/Author/'>Author</a>
+
 ]
 </center>
