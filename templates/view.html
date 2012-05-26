@@ -4,10 +4,8 @@
 	</head>
 	<body>
 		{% include "_header.html" %}
-		<h1 id="title">{{page_name}}</h1>
+		<h1 id="title">{{page_name}} (<a href='/wikicamp/{{page_name}}/edit' >edit</a>)</h1>
 		<div id='content_safe' style='font-color:navy' >{{content|safe}}</div>
-		<hr/>
-		<a href='/wikicamp/{{page_name}}/edit' >Edit this page?</a>
-		
+		{% include "_footer.html" %}
 	</body>
 </html>
