@@ -32,3 +32,6 @@ def save_page(request, page_name):
     page = Page(name=page_name, content=content)
   page.save()
   return HttpResponseRedirect("/wikicamp/" + page_name + "/" )
+
+def view_home(request):
+    return HttpResponseRedirect("/wikicamp/Home/")
