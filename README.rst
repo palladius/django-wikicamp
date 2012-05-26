@@ -13,6 +13,7 @@ Install
 Requires module::
 
   markdown
+  docutils
 
 Develop
 -------
