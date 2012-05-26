@@ -1,0 +1,18 @@
+<html>
+	<head>
+			<title>{{page_name}} - Editing</title>
+	</head>
+	<body>
+		{% include "_header.html" %}
+		<h1 id="title">Editing: '{{page_name}}'</h1>
+		
+		<form method='post' action='/wikicamp/{{page_name}}/save/' >
+			{% csrf_token %}
+			<textarea name='content' rows='20' cols='60'>{{content}}</textarea>
+			<br/>
+			
+			<input type='submit' value='save page' >
+		</form>
+		
+	</body>
+</html>
