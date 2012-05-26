@@ -4,7 +4,7 @@ Wikicamp
 How to do a Wiki on Django. This is a pic of how it comes out :)
 
 .. image:: https://github.com/palladius/django-wikicamp/raw/master/doc/django-rickywiki.png
-   :height: 150px
+   :height: 100px
    :scale: 50 %
    :alt: This is a snapshot of Riccardo great wiki
    :align: right

@@ -2,10 +2,10 @@
 	<head>
 			<title>{{page_name}}</title>
 	</head>
-	<body>
+	<body  >
 		{% include "_header.html" %}
 		<h1 id="title">{{page_name}} (<a href='/wikicamp/{{page_name}}/edit' >edit</a>)</h1>
-		<div id='content_safe' style='font-color:navy' >{{content|safe}}</div>
+		<div id='content_safe' style='color:navy; background-color:#77FF77;width:90%;' >{{content|safe}}</div>
 		{% include "_footer.html" %}
 	</body>
 </html>
